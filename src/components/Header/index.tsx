@@ -11,7 +11,6 @@ import { Context } from '../../context';
 
 const Header: React.FC = () => {
     const [user] = useContext(Context);
-    console.log(user);
 
     return (
         <Wrapper>

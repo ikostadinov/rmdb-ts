@@ -47,7 +47,6 @@ export const useHomeFetch = () => {
             const sessionState = isPersistedState('homeState');
 
             if (sessionState) {
-                console.log("Grabbing from sessinstorage");
                 setState(sessionState);
                 return;
             }

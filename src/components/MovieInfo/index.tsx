@@ -32,7 +32,7 @@ const MovieInfo: React.FC<Props> = ({ movie }) => {
 
     const handleRating = async (value: string) => {
         try {
-            const rate = await API.rateMovie(user.sessionId, movie.id, value);
+            await API.rateMovie(user.sessionId, movie.id, value);
             setIsRated(true)
             setTimeout(() => {
                 setIsRated(false);
